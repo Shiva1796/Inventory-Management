@@ -5,7 +5,6 @@ const Form = () => {
   return (
     <form>
       <Input />
-
       <SubmitButton />
     </form>
   );
