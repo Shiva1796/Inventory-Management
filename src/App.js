@@ -1,5 +1,6 @@
 import { useState } from "react";
 import DisplayList from "./components/Form/DisplayList";
+import classes from "./App.modules.css";
 
 import Form from "./components/Form/Form";
 
@@ -16,7 +17,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={["main-body"]}>
       <Form onPartAdd={onPartAddHandler} />
       <DisplayList parts={partsList} />
     </div>

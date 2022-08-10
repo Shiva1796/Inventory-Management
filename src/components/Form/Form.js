@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import SubmitButton from "./SubmitButton";
+import classes from "./Form.modules.css";
 
 const Form = (props) => {
   const [partNumber, setPartNumber] = useState("");
@@ -26,7 +27,7 @@ const Form = (props) => {
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form className={["input-form"]} onSubmit={submitHandler}>
       <label htmlFor="part">Part Number: </label>
       <input
         value={partNumber}

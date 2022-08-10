@@ -1,5 +1,7 @@
-const SubmitButton = (props) => {
-  return <button>Submit</button>;
+import classes from "./SubmitButton.modules.css";
+
+const SubmitButton = () => {
+  return <button className={"button"}>Submit</button>;
 };
 
 export default SubmitButton;

@@ -1,12 +1,16 @@
+import classes from "./DisplayList.modules.css";
+
 const DisplayList = (props) => {
   return (
-    <ul>
+    <div className={"list"}>
       {props.parts.map((part) => (
-        <li key={part.partNumber}>
-          {part.partNumber} ${part.partPrice} {part.partWeight} lbs
-        </li>
+        <ul key={part.partNumber} className={["list-items"]}>
+          <li>Part Number: {part.partNumber}</li>
+          <li>Price: ${part.partPrice}</li>
+          <li>Weight: {part.partWeight} lbs</li>
+        </ul>
       ))}
-    </ul>
+    </div>
   );
 };
 
