@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import SubmitButton from "./SubmitButton";
 
-const Input = () => {
+const Form = (props) => {
   const [partNumber, setPartNumber] = useState("");
   const [price, setPrice] = useState("");
   const [weight, setWeight] = useState("");
@@ -19,6 +19,7 @@ const Input = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    props.onPartAdd(partNumber, price, weight);
     setPartNumber("");
     setPrice("");
     setWeight("");
@@ -58,4 +59,4 @@ const Input = () => {
   );
 };
 
-export default Input;
+export default Form;

@@ -1,8 +1,11 @@
 const DisplayList = (props) => {
   return (
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
+      {props.parts.map((part) => (
+        <li key={part.partNumber}>
+          {part.partNumber} ${part.partPrice} {part.partWeight} lbs
+        </li>
+      ))}
     </ul>
   );
 };
