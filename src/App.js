@@ -11,7 +11,7 @@ function App() {
     setPartsList((prevPartList) => {
       return [
         ...prevPartList,
-        { partNumber: part, partPrice: price, partWeight: weight },
+        { partNumber: part, price: price, weight: weight },
       ];
     });
   };
