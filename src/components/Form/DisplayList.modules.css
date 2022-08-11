@@ -7,8 +7,10 @@
   width: 90vw;
 }
 
-.list-items {
+.card {
   display: flex;
+  min-width: max-content;
+  max-width: min-content;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
@@ -16,6 +18,16 @@
 }
 li {
   width: 30vw;
+  padding: 5px;
   display: flex;
   align-items: flex-start;
+}
+
+.part {
+  border-right: rgba(0, 0, 0, 0.301) 1px solid;
+  line-height: 1.5rem;
+}
+.price {
+  border-right: rgba(0, 0, 0, 0.301) 1px solid;
+  line-height: 1.5rem;
 }
