@@ -60,7 +60,7 @@ const Form = (props) => {
       return;
     }
 
-    props.onPartAdd(partNumber, price, weight);
+    props.onPartAdd(partNumber.toUpperCase(), price, weight);
     setPartNumber("");
     setPrice("");
     setWeight("");
