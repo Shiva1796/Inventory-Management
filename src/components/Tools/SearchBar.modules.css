@@ -1,11 +1,5 @@
-.search-body {
-  width: 80vw;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
 .search {
   color: white;
   font-weight: bold;
+  padding: 10px;
 }

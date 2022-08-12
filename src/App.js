@@ -1,8 +1,9 @@
 import { useState } from "react";
+
 import DisplayList from "./components/List/DisplayList";
 import classes from "./App.modules.css";
-
 import Form from "./components/Form/Form";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const [partsList, setPartsList] = useState([]);
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className={["main-body"]}>
+      <Navbar />
       <Form onPartAdd={onPartAddHandler} />
       <DisplayList parts={partsList} />
     </div>

@@ -3,8 +3,6 @@ import { useState } from "react";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
 import classes from "./Form.modules.css";
-import Card from "../UI/Card";
-import SearchBar from "../Tools/SearchBar";
 
 const Form = (props) => {
   const [partNumber, setPartNumber] = useState("");
@@ -76,7 +74,7 @@ const Form = (props) => {
           onConfirm={errorHandler}
         />
       )}
-      <SearchBar />
+
       <form className={["input-form"]} onSubmit={submitHandler}>
         <label htmlFor="part">Part Number: </label>
         <input
