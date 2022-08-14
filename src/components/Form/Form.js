@@ -64,6 +64,7 @@ const Form = (props) => {
     setPartNumber("");
     setPrice("");
     setWeight("");
+    console.log(props.parts);
   };
 
   return (
@@ -105,7 +106,7 @@ const Form = (props) => {
         />
         <Button type="submit">Submit</Button>
       </form>
-      <FormNav />
+      <FormNav parts={props.parts} />
     </div>
   );
 };

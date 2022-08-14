@@ -1,7 +1,6 @@
-import Card from "../UI/Card";
 import classes from "./ListData.modules.css";
 
-const ListData = () => {
+const ListData = (props) => {
   const DATA = [
     {
       partNumber: "CS045",
@@ -27,12 +26,16 @@ const ListData = () => {
 
   const DataMapped = DATA.map((data) => (
     <ul key={data.partNumber} className={["list-items"]}>
-      <li className={"part"}>Part Number: {data.partNumber}</li>
-      <li className={"price"}>Price: $ {data.price}</li>
-      <li className={"weight"}>Weight: {data.weight} lbs</li>
+      <li className={"part"}>{data.partNumber}</li>
+      <li className={"price"}>{data.price}</li>
+      <li className={"weight"}>{data.weight}</li>
     </ul>
   ));
-  return <div className={"data"}>{DataMapped}</div>;
+  return (
+    <div className={"data"} mappeddata={DataMapped}>
+      {DataMapped}
+    </div>
+  );
 };
 
 export default ListData;

@@ -20,7 +20,7 @@ function App() {
   return (
     <div className={["main-body"]}>
       <Navbar />
-      <Form onPartAdd={onPartAddHandler} />
+      <Form onPartAdd={onPartAddHandler} parts={partsList} />
       <DisplayList parts={partsList} />
     </div>
   );
