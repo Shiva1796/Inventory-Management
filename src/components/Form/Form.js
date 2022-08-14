@@ -3,6 +3,7 @@ import { useState } from "react";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
 import classes from "./Form.modules.css";
+import FormNav from "./FormNav";
 
 const Form = (props) => {
   const [partNumber, setPartNumber] = useState("");
@@ -104,6 +105,7 @@ const Form = (props) => {
         />
         <Button type="submit">Submit</Button>
       </form>
+      <FormNav />
     </div>
   );
 };

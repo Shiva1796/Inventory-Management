@@ -32,7 +32,7 @@ const ListData = () => {
       <li className={"weight"}>Weight: {data.weight} lbs</li>
     </ul>
   ));
-  return <div>{DataMapped}</div>;
+  return <div className={"data"}>{DataMapped}</div>;
 };
 
 export default ListData;
